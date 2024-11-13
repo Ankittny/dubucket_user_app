@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "295964765669",
+    "project_id": "dubucket-deb73",
+    "storage_bucket": "dubucket-deb73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295964765669:android:3b1615a9567eef443dd30c",
+        "android_client_info": {
+          "package_name": "com.dubucket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295964765669-fgv24k8rm4gl6o8nbnr0kp1qig2i30dp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dubucket",
+            "certificate_hash": "f2f7db007b7728b4fdbbd29f0ab0c64604ef80f4"
+          }
+        },
+        {
+          "client_id": "295964765669-jdbgb1miih3653vtguvlhbin4cu7kgpi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dubucket",
+            "certificate_hash": "1d13bd6c50643fd2ec899bd21eb41e60f2841e1a"
+          }
+        },
+        {
+          "client_id": "295964765669-q744r95jd0ts0gklu5k42ukqg6mbin7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo3C5TPJHkgO5q8RIVnLCa7-BNHNNtNT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105892394225762254325",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
