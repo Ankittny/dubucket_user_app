@@ -174,7 +174,6 @@ class _WebNewHomeScreenState extends State<WebNewHomeScreen> {
                 // (isPharmacy || isFood) ? const SizedBox() : isShop ? const WebNewOnViewWidget() : const WebNewOnMartViewWidget(),
                 isFood ? const SizedBox() : const WebPromotionalBannerView(),
 
-
                 // Padding(
                 //   padding: const EdgeInsets.fromLTRB(10, 20, 0, 5),
                 //   child: GetBuilder<StoreController>(builder: (storeController) {
@@ -230,6 +229,7 @@ class _WebNewHomeScreenState extends State<WebNewHomeScreen> {
           SliverToBoxAdapter(
             child: GetBuilder<StoreController>(builder: (storeController) {
               return FooterView(
+                removeSpace: true,
                 child: SizedBox(
                   width: Dimensions.webMaxWidth,
                   // child: PaginatedListView(

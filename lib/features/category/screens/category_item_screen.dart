@@ -227,8 +227,8 @@ class CategoryItemScreenState extends State<CategoryItemScreen> with TickerProvi
                   labelStyle: robotoBold.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
                   tabs: [
                     Tab(text: 'item'.tr),
-                    Tab(text: Get.find<SplashController>().configModel!.moduleConfig!.module!.showRestaurantText!
-                        ? 'restaurants'.tr : 'stores'.tr),
+                    // Tab(text: Get.find<SplashController>().configModel!.moduleConfig!.module!.showRestaurantText!
+                    //     ? 'restaurants'.tr : 'stores'.tr),
                   ],
                 ),
               )),
@@ -272,14 +272,14 @@ class CategoryItemScreenState extends State<CategoryItemScreen> with TickerProvi
                         isStore: false, items: item, stores: null, noDataText: 'no_category_item_found'.tr,
                       ),
                     ),
-                    SingleChildScrollView(
-                      controller: storeScrollController,
-                      child: ItemsView(
-                        isStore: true, items: null, stores: stores,
-                        noDataText: Get.find<SplashController>().configModel!.moduleConfig!.module!.showRestaurantText!
-                            ? 'no_category_restaurant_found'.tr : 'no_category_store_found'.tr,
-                      ),
-                    ),
+                    // SingleChildScrollView(
+                    //   controller: storeScrollController,
+                    //   child: ItemsView(
+                    //     isStore: true, items: null, stores: stores,
+                    //     noDataText: Get.find<SplashController>().configModel!.moduleConfig!.module!.showRestaurantText!
+                    //         ? 'no_category_restaurant_found'.tr : 'no_category_store_found'.tr,
+                    //   ),
+                    // ),
                   ],
                 ),
               )),
