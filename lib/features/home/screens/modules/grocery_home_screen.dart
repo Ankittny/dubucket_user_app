@@ -31,8 +31,8 @@ class GroceryHomeScreen extends StatelessWidget {
         color: Theme.of(context).disabledColor.withOpacity(0.1),
         child:  const Column(
           children: [
-            BadWeatherWidget(),
-
+            /// comment by ansar ali shah
+            // BadWeatherWidget(),
             BannerView(isFeatured: false),
             SizedBox(height: 12),
           ],
