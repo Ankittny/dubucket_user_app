@@ -243,11 +243,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: ResponsiveHelper.isDesktop(context) ? WebNewHomeScreen(
                   scrollController: _scrollController,
-                ) : CustomScrollView(
+                ) :
+                CustomScrollView(
                   controller: _scrollController,
+
                   physics: const AlwaysScrollableScrollPhysics(),
                   slivers: [
-
                     /// App Bar
                     SliverAppBar(
                       floating: true,
@@ -281,7 +282,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                     style: robotoMedium.copyWith(color: Theme.of(context).textTheme.bodyLarge!.color, fontSize: Dimensions.fontSizeDefault),
                                     maxLines: 1, overflow: TextOverflow.ellipsis,
                                   ),
-
                                   Row(children: [
                                     Flexible(
                                       child: Text(
@@ -317,12 +317,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       )),
                       actions: const [SizedBox()],
                     ),
-
                     /// Search Button
                     !showMobileModule ? SliverPersistentHeader(
                       pinned: true,
+                      floating: true,
                       delegate: SliverDelegate(callback: (val){}, child: Center(child: Container(
                         height: 50, width: Dimensions.webMaxWidth,
+
                         color: searchBgShow ? Get.find<ThemeController>().darkTheme ? Theme.of(context).colorScheme.surface : Theme.of(context).cardColor : null,
                         padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeSmall),
                         child: InkWell(
