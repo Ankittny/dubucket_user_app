@@ -215,12 +215,12 @@ class DashboardScreenState extends State<DashboardScreen> {
                                               Get.find<LocationController>().showLocationSuggestion &&
                                               active)
                                           ? null
-                                          : (orderController.showBottomSheet &&
+                                          : /*(orderController.showBottomSheet &&
                                                   orderController.runningOrderModel != null &&
                                                   orderController.runningOrderModel!.orders!.isNotEmpty &&
                                                   _isLogin)
                                               ? const SizedBox()
-                                              : Container(
+                                              :*/ Container(
                                                   width: 60,
                                                   height: 60,
                                                   decoration: BoxDecoration(
